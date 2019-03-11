@@ -82,7 +82,7 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  .page .header .wrapper {
+  .header .wrapper {
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -90,23 +90,23 @@ body {
     max-width: 100%;
   }
 
-  .page .main {
+  .main {
     padding-top: 105px;
   }
 
-  .page .main__header {
+  .main__header {
     font-size: 40px;
   }
 
-  .page .logo {
+  .logo {
     margin: 20px 0;
   }
 
-  .page .nav__menu {
+  .nav__menu {
     margin: 0;
   }
 
-  .page .nav__menu__item:first-of-type {
+  .nav__menu__item:first-of-type {
     margin-right: 20px;
   }
 }
