@@ -59,9 +59,8 @@ body {
 /* main */
 
 .main {
+  padding-top: 117px;
   background-color: #3cdbc0;
-  display: flex;
-  justify-content: center;
   flex: 1;
   text-align: center;
 }
@@ -76,6 +75,7 @@ body {
 }
 
 .main .wrapper {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,10 +83,30 @@ body {
 
 @media all and (min-width: 768px) {
   .header .wrapper {
-    width: 100%;
     margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
   }
+
+  .main {
+    padding-top: 105px;
+  }
+
   .main__header {
     font-size: 40px;
+  }
+
+  .logo {
+    margin: 20px 0;
+  }
+
+  .nav__menu {
+    margin: 0;
+  }
+
+  .nav__menu__item:first-of-type {
+    margin-right: 20px;
   }
 }
