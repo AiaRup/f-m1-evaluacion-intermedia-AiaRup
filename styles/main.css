@@ -1,20 +1,9 @@
 /* general */
 
-body {
+.page {
   margin: 0;
   height: 100vh;
   font-family: 'Rubik', sans-serif;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.wrapper {
-  max-width: 155px;
-  margin: 0 auto;
 }
 
 /* header */
@@ -22,13 +11,15 @@ body {
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
+  padding: 10px 0 13px;
 }
 
 .logo {
   width: 155px;
-  margin: 10px 0;
+  margin: 0 auto 10px;
 }
 
 .logo_image {
@@ -38,7 +29,7 @@ body {
 .nav__menu {
   list-style: none;
   padding: 0;
-  margin: 0 0 13px;
+  margin: 0;
   text-align: center;
 }
 
@@ -47,66 +38,49 @@ body {
 }
 
 .nav__menu__item:first-of-type {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nav__menu__link {
   font-size: 16px;
   color: #4a4a4a;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* main */
 
 .main {
-  padding-top: 117px;
   background-color: #3cdbc0;
-  flex: 1;
+  height: 100vh;
   text-align: center;
-}
-
-.main__header {
-  color: #ffffff;
-}
-
-.main__header {
-  font-size: 30px;
-  color: #fff;
-}
-
-.main .wrapper {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.main__header {
+  color: #ffffff;
+  max-width: 200px;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
 @media all and (min-width: 768px) {
-  .header .wrapper {
-    margin: 0 30px;
+  .header {
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  .main {
-    padding-top: 105px;
+  .logo {
+    margin: 0;
   }
 
   .main__header {
     font-size: 40px;
-  }
-
-  .logo {
-    margin: 20px 0;
-  }
-
-  .nav__menu {
-    margin: 0;
-  }
-
-  .nav__menu__item:first-of-type {
-    margin-right: 20px;
   }
 }
